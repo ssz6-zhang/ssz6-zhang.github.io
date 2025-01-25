@@ -2,43 +2,66 @@
 <html>
     <head>
         <title>Steven's CMPT 276 Mini-Project</title>
+        <script src="script.js" defer></script>
+        <link href="styles.css" rel="stylesheet">
     </head>
 
+    <h1>Steven's CMPT 276 Mini-Project</h1>
+    <hr>
+
+
     <body>
-        <h1>Steven's CMPT 276 Mini-Project</h1>
-        <hr>
-        <h2>About me</h2>
-        <img src="images/portrait-motorcycle.jpg" alt="Myself in April 2024" title="Myself in April 2024" style="width:632px;height:636px">
-        <p>
-            My name is Steven Zhang. I am currently in my second-year at SFU, studying Computing Science. 
-            Though I find the inner workings of computers to be fascinating, my time at SFU is only a stepping-stone 
-            in my career as a military pilot in the Royal Canadian Air force. Having undergone a year-long screening and selection process
-            during grade 12, I was selected shortly after graduating high school in July of 2023. The Canadian Armed Forces currently 
-            subsidizes my university education as part of its pipeline to train its pilots - and most of its officers for that matter.
-        </p>
-        <h2>My military career (so far)</h2>
-        <h3>"How do you attend SFU if you're in the military?"</h3>
-        <img src="images/portrait-farnham.JPG" alt="Portrait taken during Ex. Normandy, Basic Military Officer Qualification" title="Portrait taken during Ex. Normandy, Basic Military Officer Qualification" style="width:600px;height:780px">
-        <p>
-            Though I am a full-time member of the Canadian Armed Forces, I live a civilian life during the school year. I still get paid and receive benefits as any military 
-            member would, and I am still held to the same standards common to all members of the CAF. Upon graduation and receiving my commission, I will be posted to one of
-            the many military bases across Canada for my flight training (likely in Manitoba). Until then, military training only occurs in the summer.
-        </p>
-        <h3>Basic Military Officer Qualification (BMOQ)</h3>
-        <img src="images/A-18-farnham.JPG" alt="My platoon during Ex. Normandy" title="My platoon during Ex. Normandy" style="width:600px;height:480px">
-        <p>
-            I did my BMOQ during the summer of 2024 in Saint-Jean-Sur-Richelieu, Quebec. In many ways, it was as one would image it to be: early mornings (days start at 0500),
-            long, physical days, lots of push-ups, lots of running, a LOT of yelling, a LOT of swearing, and a LOT of sweating. The Canadian Military is nown among its allies as being
-            small but highly professional, and the training reflects that; the instructors genuinely wished to see us succeed, and applying stress through yelling and physical punishment, 
-            among other things, is what they were trained to do. Moreover, they were very nice people who were always willing to help, and often very funny and creative with their verbal "incentives".
-            An experience such as BMOQ builds camaraderie like no other. For 12 weeks, I was laughing, sweating, suffering, and hurting with the same group of fine people. 
-        </p>
-        <h3>The dream of flying</h3>
-        <img src="images/A-18-pilots.JPG" alt="The pilots of my platoon, BMOQ graduation day" title="The pilots of my platoon, BMOQ graduation day" style="width:672px;height:504px">
-        <p>
-            Since I was a child, all I wanted to do was fly airplanes. It was in grade 10 when I learned of the military as a career path and almost immediately set my sights toward this goal.
-            Though I do enjoy studying computer science, I see every day I spend at SFU as one step closer to sitting in the cockpit.
-        </p>
+        <ul>
+            <li data-tab-target="#home">Home</li>
+            <li data-tab-target="#military-career">Military Career</li>
+            <li data-tab-target="#coding-experience">Coding Experience</li>
+            <li data-tab-target="#hobbies">Hobbies</li>
+        </ul>
+
+
+        <div class="tab-content">
+            <div id="home" data-tab-content class="active">
+                <h2>About me</h2>
+                <img src="images/portrait-motorcycle.jpg" alt="Myself in April 2024" title="Myself in April 2024" style="width:632px;height:636px">
+                <p>
+                    My name is Steven Zhang. I am currently in my second-year at SFU, studying Computing Science. 
+                    Though I find the inner workings of computers to be fascinating, my time at SFU is only a stepping-stone 
+                    in my career as a military pilot in the Royal Canadian Air force. Having undergone a year-long screening and selection process
+                    during grade 12, I was selected shortly after graduating high school in July of 2023. The Canadian Armed Forces currently 
+                    subsidizes my university education as part of its pipeline to train its pilots - and most of its officers for that matter.
+                </p>
+            </div>
+
+            <div id="military-career" data-tab-content>
+                <h2>My military career (so far)</h2>
+                <h3>"How do you attend SFU if you're in the military?"</h3>
+                <img src="images/portrait-farnham.JPG" alt="Portrait taken during Ex. Normandy, Basic Military Officer Qualification" title="Portrait taken during Ex. Normandy, Basic Military Officer Qualification" style="width:600px;height:780px">
+                <p>
+                    Though I am a full-time member of the Canadian Armed Forces, I live a civilian life during the school year. I still get paid and receive benefits as any military 
+                    member would, and I am still held to the same standards common to all members of the CAF. Upon graduation and receiving my commission, I will be posted to one of
+                    the many military bases across Canada for my flight training (likely in Manitoba). Until then, military training only occurs in the summer.
+                </p>
+                <h3>Basic Military Officer Qualification (BMOQ)</h3>
+                <img src="images/A-18-farnham.JPG" alt="My platoon during Ex. Normandy" title="My platoon during Ex. Normandy" style="width:600px;height:480px">
+                <p>
+                    I did my BMOQ during the summer of 2024 in Saint-Jean-Sur-Richelieu, Quebec. In many ways, it was as one would image it to be: early mornings (days start at 0500),
+                    long, physical days, lots of push-ups, lots of running, a LOT of yelling, a LOT of swearing, and a LOT of sweating. The Canadian Military is nown among its allies as being
+                    small but highly professional, and the training reflects that; the instructors genuinely wished to see us succeed, and applying stress through yelling and physical punishment, 
+                    among other things, is what they were trained to do. Moreover, they were very nice people who were always willing to help, and often very funny and creative with their verbal "incentives".
+                    An experience such as BMOQ builds camaraderie like no other. For 12 weeks, I was laughing, sweating, suffering, and hurting with the same group of fine people. 
+                </p>
+                <h3>The dream of flying</h3>
+                <img src="images/A-18-pilots.JPG" alt="The pilots of my platoon, BMOQ graduation day" title="The pilots of my platoon, BMOQ graduation day" style="width:672px;height:504px">
+                <p>
+                    Since I was a child, all I wanted to do was fly airplanes. It was in grade 10 when I learned of the military as a career path and almost immediately set my sights toward this goal.
+                    Though I do enjoy studying computer science, I see every day I spend at SFU as one step closer to sitting in the cockpit.
+                </p>
+            </div>
+
+            <div id="coding-experience" data-tab-content></div>
+
+            <div id=" hobbies" data-tab-content></div>
+        </div>
         
     </body>
 
